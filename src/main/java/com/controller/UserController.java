@@ -44,8 +44,12 @@ public class UserController {
 	public String toLogin() {
 		return "/login";
 	}
-	
-	
+	@RequestMapping("noAuth")
+	public String noAuth() {
+		return "/noAuth";
+	}
+
+
 	@RequestMapping("login")
 	public String login(String name,String password,Model model) {
 		System.out.println("name="+name);

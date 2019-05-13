@@ -8,7 +8,12 @@
 	<h3 th:text="${name}"></h3>
 	
 	<hr/>
+	<div shiro:hasPermission="user:add">
 	用户添加:<a href = "add">用户添加</a><br/>
+	</div>
+	<div shiro:hasPermission="user:update">
 	用户更新:<a href = "update">用户更新</a><br/>
+	</div>
+	<a href = "toogin">登录</a><br/>
 </body>
 </html>
