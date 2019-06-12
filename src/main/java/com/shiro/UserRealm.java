@@ -49,8 +49,7 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
 		System.out.println("执行认证逻辑");
 		
-		
-		
+
 		//编写shiro判断逻辑，判断用户名和密码
 		//1.判断用户名
 		UsernamePasswordToken userToken = (UsernamePasswordToken)token;

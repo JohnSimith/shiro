@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
  *
  */
 @Configuration
-public class ShiroConfig {
+public class 		ShiroConfig {
 	
 	/**
 	 * 创建shiroFilterFactoryBean 
